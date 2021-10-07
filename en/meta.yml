@@ -3,9 +3,8 @@ hero_image: images/banner.png
 description: generic-python-file-read description
 version: 4
 listed: false
+ingredient: true
 copyedit: false
 last_tested: "2021-10-07"
 steps:
-  - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Reading a file with Python
