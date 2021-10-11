@@ -1,6 +1,6 @@
 To read a text file in Python you must `open` the file and then `read` its contents. 
 
-When opening the file, use `with` and `as` — this pair of keywords means that the indented code under the `with… as` line has run, the file will automatically close. This saves memory in your computer.
+When opening the file, use `with` and `as`.  This makes sure that, when your indented code has run, the file will automatically close. Closing files you don't need saves memory in your computer.
 
 ```python
 with open(filename) as file:
@@ -13,5 +13,5 @@ To read the file's contents, use `read()`:
 ```python
 with open(filename) as file:
   contents = file.read()
-  # Do something with the contents
+ # Do something with the contents
 ```
