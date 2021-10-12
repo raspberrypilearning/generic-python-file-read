@@ -11,7 +11,7 @@ Where `filename` is the name of the file you are opening, e.g. `'info.txt'`.
 To read the file's contents, use `read()`:
 
 ```python
-with open(filename) as file:
-  contents = file.read()
+with open(filename) as f:
+  contents = f.read()
  # Do something with the contents
 ```
