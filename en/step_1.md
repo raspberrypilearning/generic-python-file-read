@@ -8,10 +8,10 @@ with open(filename) as f:
 
 Where `filename` is the name of the file you are opening, e.g. `'info.txt'`.
 
-To read the file's contents, use `read()`:
+The file is loaded into the `f` variable, but not as text that Python can work with. To get the file as text, you need to use `read()`.
 
 ```python
 with open(filename) as f:
-  contents = f.read()
-  # Do something with the contents
+  file_text = f.read()
+  # Do something with the text
 ```
