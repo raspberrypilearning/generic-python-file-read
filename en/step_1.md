@@ -26,3 +26,4 @@ The file is loaded into the `f` variable. You can use a `for` loop to run the sa
 with open(filename) as f:
   for file_line in f:
     # Do something with the line
+```
