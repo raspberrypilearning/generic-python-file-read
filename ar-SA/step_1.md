@@ -22,4 +22,8 @@ with open(filename) as f:
 ### Loop through the file, line by line
 The file is loaded into the `f` variable. You can use a `for` loop to run the same code on each line of the file.
 
-```python with open(filename) as f: for file_line in f: # Do something with the line
+```python
+with open(filename) as f:
+  for file_line in f:
+    # Do something with the line
+```
