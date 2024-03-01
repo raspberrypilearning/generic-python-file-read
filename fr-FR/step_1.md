@@ -1,17 +1,17 @@
-To read a text file in Python you must `open` the file and then `read` its contents.
+Pour lire un fichier texte en Python, tu dois ouvrir (`open`) le fichier avant de lire (`read`) son contenu.
 
-When opening the file, use `with` and `as`.  This makes sure that, when your indented code has run, the file will automatically close. Closing files you don't need saves memory in your computer.
+Pour l'ouverture du fichier, utilise `with` et `as`.  Cela permet de t'assurer que le fichier se fermera automatiquement lorsque ton code indenté aura été exécuté. La fermeture des fichiers dont tu n'as pas besoin économise de la mémoire sur ton ordinateur.
 
 ```python
 with open(filename) as f:
 ```
 
-Where `filename` is the name of the file you are opening, e.g. `'info.txt'`.
+Où `nom_fichier` est le nom du fichier que tu es en train d'ouvrir, par exemple `'info.txt'`.
 
-Once you load your file, you can turn the whole file into a text string. Or, you can use a `for` loop to go through the file line-by-line.
+Une fois que tu as chargé ton fichier, tu peux transformer le fichier entier en une chaîne de texte. Ou tu peux utiliser une boucle `for` pour parcourir le fichier ligne par ligne.
 
-### Turn the whole file into a text string
-The file is loaded into the `f` variable, but not as a text string that Python can work with. To get the file as text, you need to use `read()`.
+### Transformer le fichier entier en chaîne de texte
+Le fichier est chargé dans la variable `f` , mais pas sous forme de chaîne de texte avec laquelle Python peut travailler. Pour transformer le fichier en texte, tu dois utiliser `read()`.
 
 ```python
 with open(filename) as f:
@@ -19,8 +19,8 @@ with open(filename) as f:
   # Do something with the text
 ```
 
-### Loop through the file, line by line
-The file is loaded into the `f` variable. You can use a `for` loop to run the same code on each line of the file.
+### Utiliser une boucle pour parcourir le fichier ligne par ligne
+Le fichier est chargé dans la variable `f` . Tu peux utiliser une boucle `for` pour exécuter le même code sur chaque ligne du fichier.
 
 ```python
 with open(filename) as f:
