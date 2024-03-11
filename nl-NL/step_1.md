@@ -1,17 +1,17 @@
-To read a text file in Python you must `open` the file and then `read` its contents.
+Om een tekstbestand in Python te lezen, moet je het bestand `openen` en dan de inhoud ervan `lezen`.
 
-When opening the file, use `with` and `as`.  This makes sure that, when your indented code has run, the file will automatically close. Closing files you don't need saves memory in your computer.
+Gebruik bij het openen van het bestand `with` en `as`.  Dit zorgt ervoor dat, wanneer je ingesprongen code is uitgevoerd, het bestand automatisch wordt gesloten. Als je bestanden sluit die je niet nodig hebt, bespaar je geheugen op je computer.
 
 ```python
 with open(filename) as f:
 ```
 
-Where `filename` is the name of the file you are opening, e.g. `'info.txt'`.
+Waarbij `bestandsnaam` de naam is van het bestand dat je opent, bijvoorbeeld `'info.txt'`.
 
-Once you load your file, you can turn the whole file into a text string. Or, you can use a `for` loop to go through the file line-by-line.
+Nadat je je bestand hebt geladen, kun je het hele bestand in een tekststring veranderen. Of je kunt een `for` lus gebruiken om regel voor regel door het bestand te gaan.
 
-### Turn the whole file into a text string
-The file is loaded into the `f` variable, but not as a text string that Python can work with. To get the file as text, you need to use `read()`.
+### Verander het hele bestand in een tekststring
+Het bestand wordt geladen in de variabele `f`, maar niet als een tekststring waarmee Python kan werken. Om het bestand als tekst te krijgen, moet je `read()`gebruiken.
 
 ```python
 with open(filename) as f:
@@ -19,8 +19,8 @@ with open(filename) as f:
   # Do something with the text
 ```
 
-### Loop through the file, line by line
-The file is loaded into the `f` variable. You can use a `for` loop to run the same code on each line of the file.
+### Loop door het bestand, regel voor regel
+Het bestand wordt geladen in de variabele `f`. Je kunt een `for` lus gebruiken om dezelfde code op elke regel van het bestand uit te voeren.
 
 ```python
 with open(filename) as f:
