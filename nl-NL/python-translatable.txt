@@ -1,5 +1,5 @@
-filename
+bestandsnaam
 
-file_text
+bestand_tekst
 
-file_line
+bestand_regel
